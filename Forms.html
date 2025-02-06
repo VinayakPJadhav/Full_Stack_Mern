@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form  Demo</title>
+</head>
+<body>
+    <form name="myform" method="post">
+    <fieldset>
+        <legend>Personal Information</legend>
+        First Name: <input type="text" name="firstname"><br><br>
+        Last Name : <input type="text" name="lastname"><br><br>
+        Password  :<input type="password" name="pass"><br><br>
+        Gender : <input type="radio" name="g">Male
+        <input type="radio" name="g">Female<br><br>
+
+        Subjects : <input type="checkbox" name="a1" >English
+                   <input type="checkbox" name="a2" >Marathi
+                   <input type="checkbox" name="a3" >Hindi
+                   <input type="checkbox" name="a4" >Others<br>
+                   <br>
+        
+        <select>
+            <option value="1">Cast Category</option>
+            <option>OBC</option>
+            <option>sC</option>
+            <option>ST</option>
+            <option>OPEN</option>
+        </select>
+
+
+        <br>
+        <br>
+        <br>
+        LIST OF CITIES :<br>
+
+        <input list="city">
+        <datalist id="city">
+            <option value="Pune"></option>
+            <option value="Mumbai"></option>
+            <option value="Nashik"></option>
+            <option value="Satara"></option>
+        </datalist>
+
+        <br>
+        <br>
+        <br>
+
+        Enter Address : <textarea rows="4" cols="10">Write Text here ...</textarea>
+
+        <br>
+        <br>
+        <br>
+        <button type="button" value="ADD" name="Sum">ADD</button>
+        <button type="reset" value="CLEAR" name="reset">CLEAR</button>
+    </fieldset> 
+    </form>
+    
+</body>
+</html>
