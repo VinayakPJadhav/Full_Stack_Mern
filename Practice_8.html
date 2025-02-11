@@ -11,7 +11,11 @@
 </head>
 <body>
     <!--         form tag is use to create the forms in html    -->
-    <form style="border: 1px solid black;"><br>
+    <form style="border: 1px solid black;
+                height: auto;
+                width: auto;"><br>
+    <h1 style="background-color: black;
+                color: white;">Form with Validations</h1>
 
         <label for="fname"> First  Name : </label>
     <!-- Sigle line input field for text    -->
@@ -29,6 +33,14 @@
 
         <label for="no"> Phone No : </label>
         <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        
+
+        
+        <label for="image">Upload an Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+        <br><br>
+          
+        
         <label>Select Gender : </label>
 
         <label for="male">Male</label>
@@ -51,8 +63,9 @@
         <input type="checkbox" id="hindi" value="hindi"><br><br>
         
         
-    <!--                    Submit button                     -->
-        <button class="submit">Submit</button><br><br>
+    <!--                    Submit / Reset button                     -->
+        <button class="submit">Submit</button>
+        <button class="reset">Reset</button><br><br>
     </form>
 </body>
 </html>
