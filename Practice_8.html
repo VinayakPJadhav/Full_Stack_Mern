@@ -1,0 +1,58 @@
+<!--     Wirte a HTML code with simple form with html validations.  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!--         form tag is use to create the forms in html    -->
+    <form style="border: 1px solid black;"><br>
+
+        <label for="fname"> First  Name : </label>
+    <!-- Sigle line input field for text    -->
+        <input type="text" id="fname" name="fname" placeholder="first Name" required minlength="2"><br><br>
+
+
+        <label for="lname"> Last  Name : </label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" required minlength="2"><br><br>
+
+        <label>Email : </label>
+        <input type="email" id="email" name="email" placeholder="Email address" required><br><br>
+
+        <label for="password"> Password: </label>
+        <input type="password" id="password" name="password" placeholder="Enter Secure Password" required minlength="8"><br><br>
+
+        <label for="no"> Phone No : </label>
+        <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        <label>Select Gender : </label>
+
+        <label for="male">Male</label>
+        <input type="radio"  name="Gender"  id="male" value="male">
+
+        <label for="female">Female</label>
+        <input type="radio" name="Gender"  id="female" value="female">
+
+        <label for="other">Others</label>
+        <input type="radio" name="Gender" id="other" value="other"><br><br>
+    <!--                                            Checkbox                                            -->
+        <label>Select the Language : </label>
+        <label for="marathi">Marathi</label>
+        <input type="checkbox" id="marathi" value="marathi">
+
+        <label for="english">English</label>
+        <input type="checkbox" id="english" value="english">
+
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" id="hindi" value="hindi"><br><br>
+        
+        
+    <!--                    Submit button                     -->
+        <button class="submit">Submit</button><br><br>
+    </form>
+</body>
+</html>
