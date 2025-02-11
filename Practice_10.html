@@ -4,21 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html layout</title>
+    <!--            Internal    css                 -->
+    <style>
+        /* Header and navigation Style */
+        header,a{
+
+            background-color: gray;
+                    color: white;
+                    display:flex;
+                    align-items: center;
+                    justify-content:space-between;
+                    text-align:end;
+                    
+            
+        }
+        
+        #h1{
+            text-align: start;
+            color: tomato;
+        }
+        footer{
+            background-color: gray;
+            color: white;
+            align-self: auto;
+            text-align: center;
+        }
+
+        section>p{
+            background-color: aquamarine;
+            color: black;
+            
+        }
+
+        .div3>video{
+            height: 400px;
+            width: 500px;
+        }
+
+        main{
+            background-color: cornflowerblue;
+        }
+    </style>
 </head>
 <body>
     <!--         TOP section of the webpage that contains the  title logo and navigation links      -->
-    <header style="background-color: gray;
-                    color: white;">
-        <h1>My Website</h1>
+    <header>
+        <h1 id="h1">My Website</h1>
     
 
     <!--            Navigation Links            -->
     <nav>
         <a href="#">Home</a>  | <a href="#">About</a>   | <a href="#">Contact us</a> |  <a href="#" >Projects</a>
-    </nav><br>
-</header>
+    </nav>
+</header><br>
 
-    <!--                -->
+    <!--    Inline CSS            -->
     <section style="border: 1px solid black;">
 
         <h2> this is section </h2>
@@ -39,16 +79,13 @@
         <p>This is a simple page.</p>
     </main>
 
-    <div style="height: auto;
-            width: auto;">
+    <div class="div3">
         <video src="SampleVideo_1280x720_1mb.mp4" type="video/mp4" controls>click here</video><br><br>
         <h2>Audio</h2>
         <audio src="SampleAudio_0.7mb.mp3" controls></audio>
     </div>
 
-    <footer style="background-color: gray;
-                    color: white;
-                    align-self: auto;">
+    <footer >
         <p>&copy CopyRights  |2025 My Website</p>
     </footer>
 
