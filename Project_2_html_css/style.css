@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+
+}
+.intro{
+    height: 50%;
+    width: 100%;
+    padding: 55px 60px;
+   
+}
+.intro h1{
+    font-size: 80px;
+    letter-spacing: -3px;
+    line-height:90px;
+}
+.child{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.child h3,.child h4{
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+#hero-img{
+    height: 80%;
+    width: 100%;
+    background-image:url("https://media.istockphoto.com/id/1157755534/photo/businessman-using-his-tablet-in-the-office.jpg?s=1024x1024&w=is&k=20&c=iMYBNdCq19W_AkE93VTyBAcXXe2uCYcBM5uLOzYq210=");
+    background-size: cover;
+}
+
+#nav{
+  
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding: 30px 40px;
+    width: 100%;
+    position: fixed;
+}
+ #nav h3{
+    
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size:20px;
+    border-radius: 50px;
+    margin-left: 10px;
+
+ }
+
+ .about{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    border-bottom: 2px solid black;
+
+    
+}
+.about h2{
+    width: 70%;
+    font-size: 50px;
+    line-height: 50px;
+
+}
+
+.about-2{
+    width: 30%;
+    height: 100%;
+    padding: 0 50px;
+    border-left:2px solid black;
+}
+
+.about-2 h3{
+    font-size: 30px;
+}
