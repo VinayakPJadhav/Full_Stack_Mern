@@ -87,8 +87,52 @@ html,body{
     height: 100%;
     padding: 0 50px;
     border-left:2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .about-2 h3{
     font-size: 30px;
+}
+
+.icons{
+    
+}
+.icons i{
+    background-color: black;
+    color: #fff;
+    padding: 7px;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+#work{
+    height: 55%;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 60px;
+}
+#work1{
+    width :30%;
+    height: 100%;
+    background-color: aqua;
+    padding-right: 50px;
+    border-right: 2px solid black;
+}
+#work1 h3{
+ font-size: 30px;   
+}
+
+#work1 i{
+    font-size:30px;;
+}
+#work2{
+    width :70%;
+    height: 100%;
+    background-color: red;
 }
