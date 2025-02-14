@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/*html,body{
+    height: 100%;
+    width:  100%;
+    
+}*/
+.main{
+    background: url('bg.png');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content:end;
+    align-items:end;
+    margin-right: 28px;
+   
+}
+
+
+#div1{
+    background: linear-gradient(rgba(86, 88, 86, 0.973),rgb(181, 181, 179));
+    width: 120vmin;
+    height: 88vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+    padding-top: 44px;
+    position: fixed;
+
+   
+}
+
+.head{
+    background-color: chartreuse;
+}
+.snake{
+    background-color: blueviolet;
+}
+.food{
+    background-color: chocolate;
+}
