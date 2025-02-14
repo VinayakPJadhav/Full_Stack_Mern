@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
+
 html,body{
 
     height: 100%;
     width: 100%;
+    
 }
 #main{
     height: 100%;
@@ -31,6 +33,11 @@ html,body{
     align-items: center;
     justify-content: space-between;
     
+}
+
+#icon{
+    width:30px;
+    cursor: pointer;
 }
 .child h3,.child h4{
     font-size: 20px;
@@ -71,7 +78,7 @@ html,body{
     align-items: center;
     justify-content: space-between;
     padding: 40px;
-    border-bottom: 2px solid black;
+   
 
     
 }
@@ -109,23 +116,24 @@ html,body{
 }
 
 #work{
-    height: 55%;
+    height: 65%;
     width: 100%;
     border-top: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px 60px;
+    border-bottom: 2px solid black;
 }
 #work1{
     width :30%;
     height: 100%;
-    background-color: aqua;
     padding-right: 50px;
     border-right: 2px solid black;
 }
 #work1 h3{
  font-size: 30px;   
+ font-weight:600;
 }
 
 #work1 i{
@@ -134,5 +142,34 @@ html,body{
 #work2{
     width :70%;
     height: 100%;
-    background-color: red;
+    /*background-color: red;*/
+    padding: 0 60px;
 }
+.work2-part{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+
+}
+
+.work2-part:nth-child(1){
+    padding-top: 0;
+    border-bottom: 2px solid black;
+}
+
+.work2-part .em1{
+    width: 50%;
+    height: 100%;
+
+}
+
+.work2-part .em1:nth-child(1){
+    border-right: 2px solid black;
+}
+
+.work2-part .em1:nth-child(2){
+    padding-left: 60px;
+}
+

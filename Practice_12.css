@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    height: 30px;
+    align-items: center;
+}
+/*              pseudo-class                */
+.nav #a1:hover{
+    color: brown;
+    background-color:white;
+    border: 5px solid yellow;
+}
+
+
+.nav #a2:active{
+    color:lawngreen;
+}
+
+.nav #a3:visited{
+    color: violet;
+}
+
+/*              pseudo-element                */
+#p1::first-letter{
+    font-size:50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #17e2a2d6;
+}
+#p1::first-line{
+    
+        font-variant: small-caps;
+      
+}
+#p2::before{
+    content:url('favicon.png');
+}
+#p2::selection{
+    color: gold;
+}
+
+.div2::marker{
+    color: red;
+    font-size: 23px;
+}

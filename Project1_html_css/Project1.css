@@ -37,6 +37,9 @@ html,body{
     border-radius: 50px;
     font-weight:500 ;
 }
+.nav h3:hover{
+    color: tomato;
+}
 .nav i{
     font-size:20px; 
     border: 2px solid black;
@@ -63,6 +66,12 @@ html,body{
     background-color: orangered;
     color: white;
     border: none;
+}
+
+/* Pesu*/
+#btn2:visited{
+    color: white;
+    background-color: blueviolet;
 }
 
 #main>h1{
