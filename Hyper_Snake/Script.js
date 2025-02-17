@@ -1,11 +1,11 @@
 // Game Constant  & variable
 
-let direction = { x: 0, y: 0 }; //Stores the movement direction of the snake x and y values.
+let inputDir = { x: 0, y: 0 }; //Stores the movement direction of the snake x and y values.
 const foodSound = new Audio("food.mp3");
 const gameOverSound = new Audio("gameover.mp3");
 const moveSound = new Audio("move.mp3");
 const musicSound = new Audio("music.mp3");
-let speed = 2; //Determines how fast the snake moves.
+let speed = 6; //Determines how fast the snake moves.
 let lastPaintTime = 0;
 let score = 0;
 //Array storing the snake body with head
@@ -22,8 +22,19 @@ function main(ctime) {
   lastPaintTime = ctime;
   gameEngine();
 }
-function isCollide(sarr) {
-  return false;
+function isCollide(snake) {
+  for(let i=1;i<snakeArr.length;i++){
+      if(snake[i].x === snake[0].x  && snake[i].y === snake[0].y){
+        return true;
+      }
+    }
+
+    // when you hit the wall
+    if(snake[0].x >= 18|| snake[0].x<=0  &&  snake[0].y >= 18|| snake[0].y<=0 ){
+        return true;
+    }
+  
+  
 }
 function gameEngine() {
   // updating the snake array ,also food;
@@ -42,6 +53,7 @@ function gameEngine() {
   //after eating the food incremnting score and regenertae the food
 
   if (snakeArr[0].y === food.y && snakeArr[0].x === food.x) {
+    foodSound.play();
     snakeArr.unshift({
       x: snakeArr[0].x + inputDir.x,
       y: snakeArr[0].y + inputDir.y,
@@ -53,6 +65,16 @@ function gameEngine() {
       y: Math.round(a + (b - a) * Math.random()),
     };
   }
+  //Moving the Snake
+  for(let i =snakeArr.length-2;i>=0;i--){
+   
+    snakeArr[i+1]= {...snakeArr[i]};
+
+  }
+
+  snakeArr[0].x += inputDir.x;
+  snakeArr[0].y += inputDir.y;
+
 
   //render the snake and food;
 
